@@ -14,11 +14,13 @@
         body {
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f5f5f5;
+            background: url('omikuji.jpeg') no-repeat center center;
+            background-size: cover;
         }
         button {
             background-color: #4CAF50;
@@ -51,12 +53,12 @@
         }
     </style>
 </head>
-<body background=“omikuji.jpeg”>
+<body>
     <header>
-        <header id="midashi_1">EAHKK神社</h1>
-      </header>
-	<button onclick="omikuji()">おみくじ結果</button>
+        <h1 id="midashi_1">EAHKK神社</h1>
+    </header>
+    <button onclick="omikuji()">おみくじ結果</button>
     <div id="omikuji">ここに表示</div>
-	<script src="omikuji.js"></script>
+    <script src="omikuji.js"></script>
 </body>
 </html>
